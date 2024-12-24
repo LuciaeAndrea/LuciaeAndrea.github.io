@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Il Nostro Matrimonio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+        <header class="bg-yellow-500 text-white text-center py-6">
+            <h1 class="text-4xl font-bold">Il Nostro Matrimonio</h1>
+            <p class="text-lg">Benvenuti al nostro sito di matrimonio!</p>
+        </header>
+
+        <nav class="text-center my-4">
+            <a href="#home" class="text-yellow-500 hover:underline mx-2"
+                >Home</a
+            >
+            <a href="#rsvp" class="text-yellow-500 hover:underline mx-2"
+                >RSVP</a
+            >
+            <a href="#gifts" class="text-yellow-500 hover:underline mx-2"
+                >Lista Nozze</a
+            >
+            <a href="#gallery" class="text-yellow-500 hover:underline mx-2"
+                >Galleria Fotografica</a
+            >
+        </nav>
+
+        <section
+            id="home"
+            class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md my-6"
+        >
+            <h2 class="text-2xl font-bold text-yellow-500 mb-4">Benvenuti!</h2>
+            <p class="text-lg">
+                Non vediamo l'ora di celebrare il nostro giorno speciale con
+                voi. Qui troverete tutte le informazioni sul nostro matrimonio.
+            </p>
+        </section>
+
+        <section
+            id="rsvp"
+            class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md my-6"
+        >
+            <h2 class="text-2xl font-bold text-yellow-500 mb-4">
+                Conferma di Partecipazione
+            </h2>
+            <p class="text-lg">
+                Compila il modulo sottostante per confermare la tua
+                partecipazione:
+            </p>
+            <form
+                action="https://example.com/submit"
+                method="POST"
+                class="space-y-4"
+            >
+                <div>
+                    <label for="name" class="block text-lg font-semibold"
+                        >Nome:</label
+                    >
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-2"
+                    />
+                </div>
+                <div>
+                    <label for="guests" class="block text-lg font-semibold"
+                        >Numero di Ospiti:</label
+                    >
+                    <input
+                        type="number"
+                        id="guests"
+                        name="guests"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-2"
+                    />
+                </div>
+                <div>
+                    <label for="message" class="block text-lg font-semibold"
+                        >Messaggio (opzionale):</label
+                    >
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        class="w-full border border-gray-300 rounded-lg p-2"
+                    ></textarea>
+                </div>
+                <button
+                    type="submit"
+                    class="w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-600"
+                >
+                    Invia
+                </button>
+            </form>
+        </section>
+
+        <section
+            id="gifts"
+            class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md my-6"
+        >
+            <h2 class="text-2xl font-bold text-yellow-500 mb-4">Lista Nozze</h2>
+            <p class="text-lg">
+                Se desiderate contribuire al nostro futuro insieme, potete
+                scegliere dalla nostra lista nozze o inviarci un contributo:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>
+                    <a
+                        href="https://www.amazon.it/wedding"
+                        class="text-yellow-500 hover:underline"
+                        >Lista Nozze su Amazon</a
+                    >
+                </li>
+                <li>IBAN: IT60X0542811101000000123456</li>
+            </ul>
+        </section>
+
+        <section
+            id="gallery"
+            class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md my-6"
+        >
+            <h2 class="text-2xl font-bold text-yellow-500 mb-4">
+                Galleria Fotografica
+            </h2>
+            <p class="text-lg mb-4">Alcune delle nostre foto preferite:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <img
+                    src="https://via.placeholder.com/300"
+                    alt="Foto 1"
+                    class="w-full rounded-lg shadow-md"
+                />
+                <img
+                    src="https://via.placeholder.com/300"
+                    alt="Foto 2"
+                    class="w-full rounded-lg shadow-md"
+                />
+                <img
+                    src="https://via.placeholder.com/300"
+                    alt="Foto 3"
+                    class="w-full rounded-lg shadow-md"
+                />
+            </div>
+        </section>
+
+        <footer class="bg-yellow-500 text-white text-center py-4 mt-6">
+            <p>&copy; 2024 Il Nostro Matrimonio. Tutti i diritti riservati.</p>
+        </footer>
+    </body>
+</html>
