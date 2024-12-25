@@ -792,6 +792,10 @@ video {
   height: 1.25rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -874,6 +878,10 @@ video {
 
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.max-w-\[85\%\] {
+  max-width: 85%;
 }
 
 .scale-50 {
@@ -1539,6 +1547,22 @@ video {
 
   .md\:aspect-square {
     aspect-ratio: 1 / 1;
+  }
+
+  .md\:h-20 {
+    height: 5rem;
+  }
+
+  .md\:h-40 {
+    height: 10rem;
+  }
+
+  .md\:w-20 {
+    width: 5rem;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
   }
 
   .md\:grid-cols-3 {
